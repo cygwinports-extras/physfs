@@ -1,0 +1,10 @@
+inherit cmake
+
+DESCRIPTION="Abstract file access for archive formats"
+HOMEPAGE="http://www.icculus.org/physfs/"
+SRC_URI="http://icculus.org/physfs/downloads/${P}.tar.gz"
+
+PATCH_URI="
+	http://patch-tracker.debian.org/patch/series/dl/libphysfs/2.0.0-4/03_gcc4.4-ftbfs.diff
+	2.0.0-gcc-visibility.patch
+"
